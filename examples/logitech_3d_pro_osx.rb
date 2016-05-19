@@ -25,22 +25,22 @@ work do
   on controller, :button_top_up_right => proc { |*value|
     puts "top_up_right action!"
   }
-  on controller, :button_buttom_up_left => proc { |*value|
-    puts "buttom_up_left action!"
+  on controller, :button_bottom_up_left => proc { |*value|
+    puts "bottom_up_left action!"
   }
-  on controller, :button_buttom_up_right => proc { |*value|
-    puts "buttom_up_right action!"
+  on controller, :button_bottom_up_right => proc { |*value|
+    puts "bottom_up_right action!"
   }
-  on controller, :button_buttom_middle_left => proc { |*value|
-    puts "buttom_middle_left action!"
+  on controller, :button_bottom_middle_left => proc { |*value|
+    puts "bottom_middle_left action!"
   }
-  on controller, :button_buttom_middle_right => proc { |*value|
-    puts "buttom_middle_right action!"
+  on controller, :button_bottom_middle_right => proc { |*value|
+    puts "bottom_middle_right action!"
   }
-  on controller, :button_buttom_down_left => proc { |*value|
-    puts "buttom_down_left action!"
+  on controller, :button_bottom_down_left => proc { |*value|
+    puts "bottom_down_left action!"
   }
-  on controller, :button_buttom_down_right => proc { |*value|
-    puts "buttom_down_right action!"
+  on controller, :button_bottom_down_right => proc { |*value|
+    puts "bottom_down_right action!"
   }
 end
