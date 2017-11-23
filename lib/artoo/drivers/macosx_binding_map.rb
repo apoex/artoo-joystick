@@ -74,5 +74,21 @@ BINDING_MAP = {
       :j1_x => 5,
       :j1_y => 6,
     }
+  },
+  :logitech_3d_pro => {
+    :button_map => {
+      0 => :fire,
+      1 => :side,
+      2 => :top_down_left,
+      3 => :top_down_right,
+      4 => :top_up_left,
+      5 => :top_up_right,
+      6 => :bottom_up_left,
+      7 => :bottom_up_right,
+      8 => :bottom_middle_left,
+      9 => :bottom_middle_right,
+      10 => :bottom_down_left,
+      11 => :bottom_down_right
+    }
   }
 }

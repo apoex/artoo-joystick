@@ -45,7 +45,7 @@ module Artoo
         connection.poll
         handle_joystick
         # TODO: handle_trackball
-        # TODO: handle_hats
+        handle_hats
         handle_buttons
       end
 
@@ -65,6 +65,15 @@ module Artoo
 
           publish(event_topic_name("update"), "trackball", {:x => x, :y => y})
           publish(event_topic_name("trackball"), {:x => x, :y => y})
+        end
+      end
+
+      def handle_hats
+        if connection.num_hats == 1
+          h = connection.hat(0)
+
+          publish(event_topic_name("update"), "hat", {:h => h})
+          publish(event_topic_name("hat"), {:h => h})
         end
       end
 
